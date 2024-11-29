@@ -172,9 +172,65 @@
                             <li> <span class="title">languages :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Filipino, Pangasinan</span> </li>
                         </ul>
                     </div>
-                    <div class="col-12 mt-3">
-                        <a href="resume.pdf" class="btn btn-download" download="Willard John Benedict Lomibao _Resume.pdf">Download Resume</a>
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Resume</title>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+                        <style>
+                            .btn-download {
+                                background-color: #007bff;
+                                color: white;
+                                font-size: 14px;
+                                padding: 8px 16px;
+                                border-radius: 4px;
+                                text-decoration: none;
+                            }
+                    
+                            .btn-download:hover {
+                                background-color: #0056b3;
+                            }
+                    
+                            .modal-content {
+                                max-height: 100vh;
+                                overflow-y: auto;
+                            }
+                    
+                            iframe {
+                                width: 100%;
+                                height: 80vh;
+                                border: none;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                    <div class="text-center mt-4">
+                        <a href="resume.pdf" class="btn btn-download" download="Willard John Benedict Lomibao III_resume.pdf">Download Resume</a>
+                        <button class="btn btn-download ms-2" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</button>
                     </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title" id="resumeModalLabel">Resume</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-2">
+                                    <iframe src="resume.pdf"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                    </body>
+                    </html>
+                    
                     
                 </div>
             </div>
